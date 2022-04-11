@@ -11,7 +11,7 @@
   
   <title>
     
-      矩阵求导 
+      朋友 
       
       
       |
@@ -157,116 +157,41 @@ MathJax = {
   
 
   
-
-  
-
-  
-  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
-  <div class="container post-details" id="post-details">
-    <div class="post-content">
-      <div class="post-title">矩阵求导</div>
-      <div class="post-attach">
-        <span class="post-pubtime">
-          <i class="iconfont icon-updatetime" title="更新时间"></i>
-          2022-03-30 15:45:49
-        </span>
-        
-              <span class="post-tags">
-                <i class="iconfont icon-tags" title="标签"></i>
-                
-                <span class="span--tag">
-                  <a href="/tags/%E6%95%B0%E5%AD%A6-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" title="数学,线性代数">
-                    <b>#</b> 数学,线性代数
-                  </a>
-                </span>
-                
-              </span>
-          
-      </div>
-      <div class="markdown-body">
-        <h1>矩阵求导</h1>
-<p>矩阵求导的实质是y的每个元素对x的每个元素分别求导。</p>
-<p>矩阵求导只讨论五种情形：向量对标量、矩阵对标量、向量对向量、标量对向量、标量对矩阵。</p>
-<p>矩阵求导的结果有分子布局和分母布局两种方式。分子布局指以分子的形态布局，若分子为标量则以分母的转置形态布局；分母布局指以分母的形态布局，若分母为标量则以分子的转置形态布局。特别地，向量对向量求导的结果为一个矩阵，分子布局则以分子维度为矩阵的行维度，分母布局则以分母的维度为行维度。</p>
-<p>矩阵求导的记号一般为默认记法，也可添加转置符号声明排布方式。例如，分子为标量且在分母加转置符号表示结果为分子布局。</p>
-<h2 id="求导公式">求导公式</h2>
-<p>向量对向量求导（保证结果是一个矩阵）<br>
-$$<br>
-\frac{\partial\vec x}{\partial \vec x}=I<br>
-$$<br>
-下面以分母布局为例：<br>
-$$<br>
-\frac{\partial A^T\vec x}{\partial \vec x}=\frac{\partial \vec x^TA}{\partial \vec x}=A<br>
-$$</p>
-<p>$$<br>
-\frac{\partial \vec u v}{\partial \vec x}=v\frac{\partial \vec u}{\partial \vec x}+\frac{\partial v}{\partial \vec x}\vec u^T<br>
-$$</p>
-<p>$$<br>
-\frac{\partial (\vec u+\vec v)}{\partial \vec x}=\frac{\partial \vec u}{\partial \vec x}+\frac{\partial \vec v}{\partial \vec x}<br>
-$$</p>
-<p>标量对向量求导</p>
-
-      </div>
+  <!-- 朋友页 url形式：https://yoursite/friends/ -->
+  <div class="container friend-index">
+    <div class="friend-list">
       
-        <div class="prev-or-next">
-          <div class="post-foot-next">
+        <div class="friend-list-item">
+          <span class="nickname">@ Zcheng</span>
+          <a href="https://zcheng.site/" target="_blank">
+            <span class="site-path">https://zcheng.site/</span>
+          </a>
+          <p class="card-meta">
             
-          </div>
-          <div class="post-attach">
-            <span class="post-pubtime">
-              <i class="iconfont icon-updatetime" title="更新时间"></i>
-              2022-03-30 15:45:49
-            </span>
+          </p>
+        </div>
+      
+        <div class="friend-list-item">
+          <span class="nickname">@ Hexo</span>
+          <a href="https://hexo.io/" target="_blank">
+            <span class="site-path">https://hexo.io/</span>
+          </a>
+          <p class="card-meta">
             
-                  <span class="post-tags">
-                    <i class="iconfont icon-tags" title="标签"></i>
-                    
-                    <span class="span--tag">
-                      <a href="/tags/%E6%95%B0%E5%AD%A6-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" title="数学,线性代数">
-                        <b>#</b> 数学,线性代数
-                      </a>
-                    </span>
-                    
-                  </span>
-              
-          </div>
-          <div class="post-foot-prev">
-            
-          </div>
+          </p>
         </div>
       
     </div>
-    
-  <div id="btn-catalog" class="btn-catalog">
-    <i class="iconfont icon-catalog"></i>
-  </div>
-  <div class="post-catalog hidden" id="catalog">
-    <div class="title">目录</div>
-    <div class="catalog-content">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">矩阵求导</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B1%82%E5%AF%BC%E5%85%AC%E5%BC%8F"><span class="toc-text">求导公式</span></a></li></ol></li></ol>
+    <div class="markdown-body">
+      <p><a target="_blank" rel="noopener" href="https://zhqtu02.github.io/">图图小屋</a></p>
+
     </div>
   </div>
+  
 
   
-<script src="/js/catalog.js"></script>
 
-
-
-
-    
-      <div class="comments-container">
-        
-
-
-
-
-
-
-
-      </div>
-    
-  </div>
-
+  
 
         
 <div class="footer">
@@ -563,12 +488,12 @@ $$</p>
       </a>
       <div class="share-content hidden">
         
-          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + %E7%9F%A9%E9%98%B5%E6%B1%82%E5%AF%BC + '&url=' + https%3A%2F%2Fpeko17.github.io%2F2022%2F03%2F30%2F%25E7%259F%25A9%25E9%2598%25B5%25E6%25B1%2582%25E5%25AF%25BC%2F + '" target="_blank" title="Twitter">
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + friends + '&url=' + https%3A%2F%2Fpeko17.github.io%2Ffriends%2Findex.html + '" target="_blank" title="Twitter">
             <i class="iconfont icon-twitter"></i>
           </a>
         
         
-          <a class="share-item" href="https://www.facebook.com/sharer.php?u=https://peko17.github.io/2022/03/30/%E7%9F%A9%E9%98%B5%E6%B1%82%E5%AF%BC/" target="_blank" title="Facebook">
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=https://peko17.github.io/friends/index.html" target="_blank" title="Facebook">
             <i class="iconfont icon-facebooksquare"></i>
           </a>
         
