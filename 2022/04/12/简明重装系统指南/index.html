@@ -11,7 +11,7 @@
   
   <title>
     
-      archive_a: 2022/3 
+      简明重装系统指南 
       
       
       |
@@ -136,32 +136,138 @@
 
 
       <div class="flex-container">
-        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<!-- last: 按年份把文章分组，当前遍历到的年份 -->
-<!-- now: 当前遍历到的文章的发布年份 -->
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
 
-<div class="container archives">
-  <div class="post-list">
-    
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2022</span>
-          </h2>
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">简明重装系统指南</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="更新时间"></i>
+          2022-04-12 10:36:20
+        </span>
+        
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="标签"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" title="计算机">
+                    <b>#</b> 计算机
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <p>本文旨在提供简洁明了的重装系统操作步骤和所需软件，一切细节都应自行参阅相关网站的说明。</p>
+<p>计算机一窍不通选手，建议认真学习<a target="_blank" rel="noopener" href="https://missing.criwits.top/">你缺失的那门计算机课 </a>。</p>
+<h1>获取镜像</h1>
+<p>系统镜像相当于系统的安装包，格式为<code>.iso</code>；要获取原版纯净的镜像，应当前往<a target="_blank" rel="noopener" href="https://next.itellyou.cn/">itellyou</a>下载。</p>
+<p>以Windows为例，一般应当下载<code>business</code>版本的镜像，其中包含家庭版、专业版等各种版本可供安装时选择。</p>
+<p><a target="_blank" rel="noopener" href="https://next.itellyou.cn/">itellyou</a>提供了镜像的<code>bt</code>链接，可以复制到迅雷等下载工具内进行下载；如果现有的下载工具不支持，推荐使用<a target="_blank" rel="noopener" href="https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases">qBittorrent Enhanced Edition</a>进行下载。</p>
+<h1>安装系统</h1>
+<p>准备好一个U盘，备份U盘内的文件。使用<a target="_blank" rel="noopener" href="https://www.ventoy.net/">Ventoy</a>对U盘进行处理，初次处理会对U盘进行格式化。随后将下载好的镜像放入U盘（事实上Ventoy已经支持直接调用硬盘上的镜像而不必放入U盘，详情请参阅文档），准备完成。</p>
+<p>查询好本品牌的电脑如何从U盘启动。以惠普为例，保持U盘插入电脑，重启并连续按<code>F9</code>直至进入选择启动方式的页面，选择U盘。随后见到Ventoy镜像列表，选择要安装的镜像名称，进入安装过程。</p>
+<p>以Windows为例，安装方式选择自定义，在磁盘列表页面，选中<code>C</code>盘（可以根据容量判断）并格式化，随后点击确定开始安装，等待直至安装完成，完成后可能会再次回到Ventoy镜像列表，只需要拔出U盘再次重启即可正常进入系统。</p>
+<h1>初始准备</h1>
+<ul>
+<li>激活系统：建议使用<a target="_blank" rel="noopener" href="https://github.com/zbezj/HEU_KMS_Activator/releases/">HEU_KMS_Activator</a></li>
+<li>更改用户文件夹路径：找到桌面、下载、文档、视频、图片、音乐这几个有特殊图标的文件夹，右键点击-属性-位置，将路径改为<code>D:\&lt;文件夹名&gt;</code>，便于日常管理和维护。</li>
+</ul>
+<p>下面提供一些常用软件供自行选择</p>
+<ul>
+<li>压缩软件：<a target="_blank" rel="noopener" href="https://www.360totalsecurity.com/zh-cn/360zip/">360zip国际版</a></li>
+<li>卸载软件：<a target="_blank" rel="noopener" href="https://geekuninstaller.com/">geek卸载器</a></li>
+<li>Office部署：<a target="_blank" rel="noopener" href="https://otp.landian.vip/zh-cn/">OfficeToolsPlus</a>（仍可使用HEU KMS Activator激活）</li>
+<li>安全防护：<a target="_blank" rel="noopener" href="https://www.huorong.cn/">火绒安全</a></li>
+</ul>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="更新时间"></i>
+              2022-04-12 10:36:20
+            </span>
+            
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="标签"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" title="计算机">
+                        <b>#</b> 计算机
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+          </div>
         </div>
       
-      <div class="post-item" title="矩阵求导">
-        <div class="time-m-d">03-30</div>
-        <div class="title">
-          <a href="/2022/03/30/%E7%9F%A9%E9%98%B5%E6%B1%82%E5%AF%BC/">
-            <span>矩阵求导</span>
-          </a>
-        </div>
+    </div>
+    
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">目录</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">获取镜像</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">安装系统</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">初始准备</span></a></li></ol>
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
+    
+      <div class="comments-container">
+        
+
+
+
+
+
+
+
       </div>
     
   </div>
-</div>
+
 
         
 <div class="footer">
@@ -169,20 +275,20 @@
     <ul>
       
         <li>
-          <a title="github" target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">
+          <a title="github" target="_blank" rel="noopener" href="https://github.com/peco17/">
             <i class="iconfont icon-github"></i>
           </a>
         </li>
       
         <li>
-          <a title="email" href="">
+          <a title="email" href="xie.yk@qq.com">
             <i class="iconfont icon-envelope"></i>
           </a>
         </li>
       
         <li>
-          <a title="facebook" href="">
-            <i class="iconfont icon-facebooksquare"></i>
+          <a title="weibo" target="_blank" rel="noopener" href="https://weibo.com/u/5672126763">
+            <i class="iconfont icon-weibo"></i>
           </a>
         </li>
       
@@ -451,6 +557,24 @@
 
 
         
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + %E7%AE%80%E6%98%8E%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F%E6%8C%87%E5%8D%97 + '&url=' + https%3A%2F%2Fpeko17.github.io%2F2022%2F04%2F12%2F%25E7%25AE%2580%25E6%2598%258E%25E9%2587%258D%25E8%25A3%2585%25E7%25B3%25BB%25E7%25BB%259F%25E6%258C%2587%25E5%258D%2597%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=https://peko17.github.io/2022/04/12/%E7%AE%80%E6%98%8E%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F%E6%8C%87%E5%8D%97/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
   
   
 <script src="/js/shares.js"></script>
